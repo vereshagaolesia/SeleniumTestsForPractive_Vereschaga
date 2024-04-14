@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bgtKiurBd/q6yzD5Aili55gzEFhF5193H6ZDI77qeoxLbt2jyH7Qb84tpwvOisNf7uz6qlxq0HHPqXI7Nw+YDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bugam\\Рабочий стол\\Олеся работа\\Айти\\СКБ Контур\\RidersProjects\\Solution1\\ClassLibrary1\\ClassLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bugam\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\bugam\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
+    "C:\\Users\\bugam\\.nuget\\packages\\selenium.webdriver\\4.19.0\\selenium.webdriver.4.19.0.nupkg.sha512"
+  ],
+  "logs": []
+}
