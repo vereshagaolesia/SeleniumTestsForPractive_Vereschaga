@@ -95,3 +95,4 @@ C:\Users\bugam\Рабочий стол\Олеся работа\Айти\СКБ �
 C:\Users\bugam\Рабочий стол\Олеся работа\Айти\СКБ Контур\RidersProjects\Solution1\SeleniumTests_Vereschaga1\obj\Debug\net8.0\SeleniumTests_Vereschaga1.pdb
 C:\Users\bugam\Рабочий стол\Олеся работа\Айти\СКБ Контур\RidersProjects\Solution1\SeleniumTests_Vereschaga1\obj\Debug\net8.0\SeleniumTests_Vereschaga1.genruntimeconfig.cache
 C:\Users\bugam\Рабочий стол\Олеся работа\Айти\СКБ Контур\RidersProjects\Solution1\SeleniumTests_Vereschaga1\obj\Debug\net8.0\ref\SeleniumTests_Vereschaga1.dll
+C:\Users\bugam\Рабочий стол\Олеся работа\Айти\СКБ Контур\RidersProjects\Solution1\SeleniumTests_Vereschaga1\obj\Debug\net8.0\SeleniumTests_Vereschaga1.sourcelink.json
