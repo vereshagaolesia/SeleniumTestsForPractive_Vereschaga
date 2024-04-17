@@ -70,24 +70,46 @@ public class SeleniumTestsForPractice
            // (нужно редактировать тесты, если используются другие логин и пароль)
     public void MyProfile()
     {
-        // - найти иконку
         IWebElement dropDownMenu = driver.FindElement(By.CssSelector("div[data-tid='Avatar']"));
-        // - клик на иконку
         dropDownMenu.Click();
-        // - найти кнопку "мой профиль"
         IWebElement myProfile = driver.FindElement(By.CssSelector("span[data-tid='Profile']"));
-        // - клик "мой профиль" (скрыто)
         myProfile.Click();
-        // - проверяем урл
+        string myName = driver.FindElement(By.CssSelector("[data-tid='EmployeeName']")).Text; 
+        myName.Should().Be("Олеся Верещага");
         string urlMyProfile = driver.Url;
         urlMyProfile.Should().Be("https://staff-testing.testkontur.ru/profile/0baa364d-2e32-47f8-9e88-7f3ac4233064");
     }
 
     [Test] // 4. поиск по имени (закрыть поиск)
-    public void MyProfile()  
+    public void fg()
+    {
+    }
     // - найти поле ввода имени
     // - ввести ""
     // - проверить
+    
+    [Test] // 6. создать папку в Файлы (hard)
+    public void AddFolder()
+    {
+        // - переход по урл на https://staff-testing.testkontur.ru/files
+        driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/files");
+        // - клик "добавить"
+        IWebElement buttonAdd = driver.FindElements(By.CssSelector("span[data-tid='DropdownButton']"))[1];
+        buttonAdd.Click();
+        // - клик "папку" (скрыто)
+         IWebElement buttonFolder = driver.FindElement(By.CssSelector("span[data-tid='CreateFolder']"));
+         buttonFolder.Click();
+        // - ввести название папки 
+        IWebElement newFolder = driver.FindElement(By.CssSelector("label[data-tid='Input']"));
+        newFolder.SendKeys("1NewFolder");
+        // - найти активную кнопку и клик "сохранить"
+        IWebElement buttonSave = driver.FindElement(typeof(By("button")); // доделать!
+        buttonSave.Click();
+        // - проверить название папки на странице
+        
+    }
+    
+    
     
     [TearDown]
     public void TearDown()
