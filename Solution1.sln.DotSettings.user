@@ -2,5 +2,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3b668212_002D2c08_002D449e_002D887d_002Def88516ab592/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Authorization" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.Authorization&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.Dialogs&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.MyProfile&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
