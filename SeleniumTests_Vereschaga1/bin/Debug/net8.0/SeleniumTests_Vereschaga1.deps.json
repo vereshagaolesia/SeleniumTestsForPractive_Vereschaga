@@ -8,20 +8,30 @@
     ".NETCoreApp,Version=v8.0": {
       "SeleniumTests_Vereschaga1/1.0.0": {
         "dependencies": {
+          "Bogus": "35.5.0",
           "FluentAssertions": "7.0.0-tags-7-0-0-alpha-3.1",
           "Microsoft.NET.Test.Sdk": "17.10.0-release-24177-07",
           "NUnit": "4.1.0",
           "Selenium.Support": "4.19.0",
           "Selenium.WebDriver": "4.19.0",
-          "SeleniumExtras.WaitHelpers": "1.0.2"
+          "SeleniumExtras.WaitHelpers": "1.0.2",
+          "System.Configuration.ConfigurationManager": "9.0.0-preview.3.24172.9"
         },
         "runtime": {
           "SeleniumTests_Vereschaga1.dll": {}
         }
       },
+      "Bogus/35.5.0": {
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "assemblyVersion": "35.5.0.0",
+            "fileVersion": "35.5.0.0"
+          }
+        }
+      },
       "FluentAssertions/7.0.0-tags-7-0-0-alpha-3.1": {
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "4.4.0"
+          "System.Configuration.ConfigurationManager": "9.0.0-preview.3.24172.9"
         },
         "runtime": {
           "lib/net6.0/FluentAssertions.dll": {
@@ -343,31 +353,46 @@
           }
         }
       },
-      "System.Configuration.ConfigurationManager/4.4.0": {
+      "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.4.0"
+          "System.Diagnostics.EventLog": "9.0.0-preview.3.24172.9",
+          "System.Security.Cryptography.ProtectedData": "9.0.0-preview.3.24172.9"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25519.3"
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/9.0.0-preview.3.24172.9": {
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
           }
         }
       },
       "System.Reflection.Metadata/1.6.0": {},
-      "System.Security.Cryptography.ProtectedData/4.4.0": {
+      "System.Security.Cryptography.ProtectedData/9.0.0-preview.3.24172.9": {
         "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
           }
         }
       }
@@ -378,6 +403,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bogus/35.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iCXszbIvvxgfb01bPe/s3R6pQSKX6rpcQWqM7wqDt+lsMogR6fkSWBwqOxLpdXmMB7mgZNNk2hm2M1shoIiekA==",
+      "path": "bogus/35.5.0",
+      "hashPath": "bogus.35.5.0.nupkg.sha512"
     },
     "FluentAssertions/7.0.0-tags-7-0-0-alpha-3.1": {
       "type": "package",
@@ -449,12 +481,19 @@
       "path": "seleniumextras.waithelpers/1.0.2",
       "hashPath": "seleniumextras.waithelpers.1.0.2.nupkg.sha512"
     },
-    "System.Configuration.ConfigurationManager/4.4.0": {
+    "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==",
-      "path": "system.configuration.configurationmanager/4.4.0",
-      "hashPath": "system.configuration.configurationmanager.4.4.0.nupkg.sha512"
+      "sha512": "sha512-runfNU7hYhiU7KtXidbvbTKcSHgzRQRjuc6spGbYRAIeqVljo17sNvSpql+5c/ujzR5RRmj7KFvkeq0d3B7PsA==",
+      "path": "system.configuration.configurationmanager/9.0.0-preview.3.24172.9",
+      "hashPath": "system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/9.0.0-preview.3.24172.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OzGq8i0n5iP6ccBkVVIS4HQw3GALSWsAPscZ8ult97sUuNc8e97dH4ZB3XNf2eGev4ajSxBOM6yl9KJFLKrwcA==",
+      "path": "system.diagnostics.eventlog/9.0.0-preview.3.24172.9",
+      "hashPath": "system.diagnostics.eventlog.9.0.0-preview.3.24172.9.nupkg.sha512"
     },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
@@ -463,12 +502,12 @@
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.ProtectedData/4.4.0": {
+    "System.Security.Cryptography.ProtectedData/9.0.0-preview.3.24172.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
-      "path": "system.security.cryptography.protecteddata/4.4.0",
-      "hashPath": "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+      "sha512": "sha512-gabqUZPA1uToMV1QOjulFSJm0Zg2C64ibAeSXCMbN0gMfcAMKL4ckTJyBvj5hcV7iBTGz4QjEVZHDe4Isoh5Vg==",
+      "path": "system.security.cryptography.protecteddata/9.0.0-preview.3.24172.9",
+      "hashPath": "system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512"
     }
   }
 }

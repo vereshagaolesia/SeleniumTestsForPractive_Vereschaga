@@ -4,7 +4,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
-
+using System;
+using System.Text;
 namespace SeleniumTests_Vereschaga1;
 
 public class SeleniumTestsForPractice
@@ -80,58 +81,51 @@ public class SeleniumTestsForPractice
     {
      // - переход по урл на https://staff-testing.testkontur.ru/communities
      driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/communities");
-     // - найти и кликнуть на кнопку "Создать" Xpath //*[@id="root"]/section/section[2]/section/div[2]/span/button/svg
+     // - найти и кликнуть на кнопку "Создать"
      IWebElement buttonCreate = driver.FindElement(By.CssSelector("section[data-tid='PageHeader']")).FindElement(By.TagName("button"));
      buttonCreate.Click();
-     // - найти и заполнить название data-tid="Name"
-     IWebElement nameCommunity = driver.FindElement(By.CssSelector("textarea[placeholder='Название сообщества']"));
-     nameCommunity.SendKeys("1newCommunity");
-     // - найти и кликнуть на кнопку создать
-     IWebElement buttonCreateCommynity = driver.FindElement(By.CssSelector("span[data-tid='CreateButton']"));
-     buttonCreateCommynity.Click();
-     // - найти и кликнуть на ссылку со своим названием
+     // - найти и заполнить название 
      
-     // - проверить, содержит ли data-tid="Title"
-        
-        
+     var uniqueCommunity =  Guid.NewGuid().ToString("N");
+     Console.WriteLine(uniqueCommunity);
+     //nameCommunity.SendKeys("1newCommunity");
+     IWebElement nameCommunity = driver.FindElement(By.CssSelector("textarea[placeholder='Название сообщества']"));
+     Console.WriteLine("нашел поле");
+     nameCommunity.SendKeys(uniqueCommunity);
+     // - найти и кликнуть на кнопку создать
+     IWebElement buttonCreateCommunity = driver.FindElement(By.CssSelector("span[data-tid='CreateButton']"));
+     buttonCreateCommunity.Click();
+     // - найти и кликнуть на ссылку со своим названием
+     IWebElement newCommunity = driver.FindElement(By.XPath($"//*[contains(text(),uniqueCommunity)]"));
+     // - проверить uniqueCommunity
+     newCommunity.Should().NotBeNull();
+     
+
+
+
     }
      
      
-    [Test]   // 5. Удалить сообщество
-    public void DeleteCommunity()
+    [Test]   // 5. поиск по файлам
+    public void SearchFile()
     {
-        // - метод создать сообщество
-        CreateCommunity();
-        // - переход по урл в список сообществ
-        driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/communities");
-        // - найти кнопку "Я модератор"
-        IWebElement buttonModerator = driver.FindElements(By.CssSelector("a[data-tid='Item']"))[2];
-        // - клик по "Я модератор"
-        buttonModerator.Click();   
-        // - ждать
+        // - перейти по урл https://staff-testing.testkontur.ru/files
+        driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/files");
+        // - найти лупу button data-tid="Search"
+        IWebElement buttonSearch = driver.FindElement(By.CssSelector("button[data-tid='Search']"));
+        // - клик
+        buttonSearch.Click();
+        // ждем прогрузку страницы
+        wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("label[data-tid='Search']")));
+        // - найти поле для поиска
+        IWebElement fieldSearch = driver.FindElement(By.CssSelector("label[data-tid='Search']"));
+        // - записать значение "Папка"
+        fieldSearch.SendKeys("Папка");
+        wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("[data-tid='Feed']")));
+        // - выбираем первый ответ, где содержится "Папка" (contain)
+        IWebElement nameFile = driver.FindElement(By.CssSelector("div[data-tid='Folders']")).FindElement(By.XPath($"//*[contains(text(),fieldSearch)]"));
+        nameFile.Should().NotBeNull();
         
-        // - найти сообщество div title="" data-tid="Avatar"  или a data-tid="Link"
-        IWebElement community = driver.FindElement(By.CssSelector("a[data-tid='Item']"));
-        // - клик
-        community.Click();
-        // - найти меню  PopupMenu__caption
-        IWebElement dropMenu = driver.FindElements(By.CssSelector("a[data-tid='PopupMenu__caption']"))[1];
-        // - клик
-        dropMenu.Click();
-        // - найти кнопку "Настройки"
-        IWebElement settings = driver.FindElement(By.CssSelector("a[data-tid='Settings']"));
-        // - клик
-        settings.Click();
-        // - найти "Удалить сообщество" button DeleteButton
-        IWebElement buttonDelete = driver.FindElement(By.CssSelector("button[data-tid='DeleteButton']"));
-        // - клик
-        buttonDelete.Click();
-        // - найти кнопку "Удалить" (подтвердить удаление)
-        IWebElement buttonDelete2 = driver.FindElement(By.CssSelector("button[data-tid='DeleteButton']"));
-        // - клик
-        buttonDelete2.Click();
-        // - проверить урл "Новости" https://staff-testing.testkontur.ru/news
-        CheckNews();
 
 
     }

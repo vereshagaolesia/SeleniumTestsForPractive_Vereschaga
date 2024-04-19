@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DURbZhdFSzYqK4LNDOpeEl2AXHyQyuOM6TywIUEA+X5uZUsoDjujDM9MrigNg6NPdVN6wUcah8DAhYxnx3fXFg==",
+  "dgSpecHash": "tuVqN7fkWMLI+VAtCueIGEWcBKrGCHW7Ihn9cLarPKf+MjiQVXfDQbpw6WAvA8wl4fs/7EPYQG0pL5S7stvRfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bugam\\Рабочий стол\\Олеся работа\\Айти\\СКБ Контур\\RidersProjects\\Solution1\\SeleniumTests_Vereschaga1\\SeleniumTests_Vereschaga1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bugam\\.nuget\\packages\\bogus\\35.5.0\\bogus.35.5.0.nupkg.sha512",
     "C:\\Users\\bugam\\.nuget\\packages\\fluentassertions\\7.0.0-tags-7-0-0-alpha-3.1\\fluentassertions.7.0.0-tags-7-0-0-alpha-3.1.nupkg.sha512",
     "C:\\Users\\bugam\\.nuget\\packages\\microsoft.codecoverage\\17.10.0-release-24177-07\\microsoft.codecoverage.17.10.0-release-24177-07.nupkg.sha512",
     "C:\\Users\\bugam\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0-release-24177-07\\microsoft.net.test.sdk.17.10.0-release-24177-07.nupkg.sha512",
@@ -14,9 +15,10 @@
     "C:\\Users\\bugam\\.nuget\\packages\\selenium.support\\4.19.0\\selenium.support.4.19.0.nupkg.sha512",
     "C:\\Users\\bugam\\.nuget\\packages\\selenium.webdriver\\4.19.0\\selenium.webdriver.4.19.0.nupkg.sha512",
     "C:\\Users\\bugam\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
-    "C:\\Users\\bugam\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\bugam\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.0-preview.3.24172.9\\system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\bugam\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.0-preview.3.24172.9\\system.diagnostics.eventlog.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\bugam\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
-    "C:\\Users\\bugam\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+    "C:\\Users\\bugam\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.0-preview.3.24172.9\\system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512"
   ],
   "logs": []
 }
