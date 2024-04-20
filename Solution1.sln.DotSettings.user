@@ -8,6 +8,8 @@
     &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.DeleteCommunity&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.CreateCommunity&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.SearchFile&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.ToMyProfile&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7362E5E4-3B39-433A-957F-6675A1DF9F7A::net8.0::SeleniumTests_Vereschaga1.SeleniumTestsForPractice.ToDialogs&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/SpawnedProcessesKnownList/=conhost_002Eexe/@EntryIndexedValue">KillOrphaned</s:String></wpf:ResourceDictionary>
